@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Nine Closet "Style"</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .cart-dot {
+            position: relative;
+        }
+        .cart-dot::after {
+            content: '•';
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Skip to content -->
+    <a href="#MainContent" class="sr-only focus:not-sr-only">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-1">
+                    <a href="/" class="text-xl font-normal hover:opacity-70 transition-opacity">
+                        Number Nine Closet "Style"
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/collections/all" class="text-sm hover:opacity-70 transition-opacity">Shop all</a>
+                    <a href="/cart" class="cart-dot hover:opacity-70 transition-opacity">
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="MainContent">
+        <!-- Hero Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+            <h1 class="text-4xl sm:text-5xl font-normal text-center mb-24">
+                Welcome to Number Nine Closet "Style"
+            </h1>
+        </div>
+
+        <!-- Brand Story -->
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+            <div class="aspect-[4/3] mb-16">
+                <img src="https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg" 
+                     alt="Fashion" 
+                     class="w-full h-full object-cover rounded-lg">
+            </div>
+
+            <div class="prose max-w-none">
+                <div class="space-y-6 text-lg leading-relaxed">
+                    <p>
+                        Number Nine Closet "Style" has been a vision of mine for a long time. Just to introduce myself — I'm the person behind it. Growing up, I always found myself fascinated by the idea of style not just as what you wear, but as an expression of who you are. I didn't come from a place where fashion was handed to you. Creativity wasn't a luxury — it was a way to stand out, to say something without even speaking.
+                    </p>
+                    <p>
+                        From a young age, I paid attention to every small detail — the way colors matched (or didn't), the way a simple accessory could change everything. To me, style was about completeness. About individuality. About being you, fully and unapologetically.
+                    </p>
+                    <p>
+                        The name Number Nine Closet "Style" represents exactly that. In numerology, 9 symbolizes completeness — it's the end of a cycle before everything resets. Think about it: from 1 to 9, and then it starts again at 0, at 10. Just like creativity, just like fashion — it's always evolving, always reaching a new pinnacle before starting a new journey.
+                    </p>
+                    <p>
+                        Starting this brand wasn't just about clothing. It was about creating a space where people could find pieces that represent their peak, their originality, their own Number Nine moment. This is for the dreamers, the risk-takers, the ones not afraid to hit 9 and start over even stronger.
+                    </p>
+                    <p>
+                        Welcome to Number Nine Closet "Style". I hope you feel as complete wearing it as I felt creating it. Love you.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+            <h2 class="text-2xl font-normal mb-12">Featured products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                <!-- Product 1 -->
+                <div class="group">
+                    <a href="#" class="block">
+                        <div class="aspect-[3/4] overflow-hidden mb-4">
+                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
+                                 alt="Product 1" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-base mb-1">Example product title</h3>
+                        <p class="text-gray-600">Regular price €19,99 EUR</p>
+                    </a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group">
+                    <a href="#" class="block">
+                        <div class="aspect-[3/4] overflow-hidden mb-4">
+                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
+                                 alt="Product 2" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-base mb-1">Example product title</h3>
+                        <p class="text-gray-600">Regular price €19,99 EUR</p>
+                    </a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group">
+                    <a href="#" class="block">
+                        <div class="aspect-[3/4] overflow-hidden mb-4">
+                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
+                                 alt="Product 3" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-base mb-1">Example product title</h3>
+                        <p class="text-gray-600">Regular price €19,99 EUR</p>
+                    </a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group">
+                    <a href="#" class="block">
+                        <div class="aspect-[3/4] overflow-hidden mb-4">
+                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
+                                 alt="Product 4" 
+                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-base mb-1">Example product title</h3>
+                        <p class="text-gray-600">Regular price €19,99 EUR</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-sm text-gray-500 space-y-4">
+                <p>Choosing a selection results in a full page refresh.</p>
+                <p>Opens in a new window.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
