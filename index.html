@@ -1,157 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Nine Closet "Style"</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .cart-dot {
-            position: relative;
-        }
-        .cart-dot::after {
-            content: '•';
-            position: absolute;
-            top: -5px;
-            right: -8px;
-            font-size: 20px;
-        }
-    </style>
-</head>
-<body class="bg-white text-gray-900">
-    <!-- Skip to content -->
-    <a href="#MainContent" class="sr-only focus:not-sr-only">Skip to content</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Number Nine Closet "Style"</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+            .cart-dot {
+                position: relative;
+            }
+            .cart-dot::after {
+                content: "•";
+                position: absolute;
+                top: -5px;
+                right: -8px;
+                font-size: 20px;
+                color: #ef4444;
+            }
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+            .hover-scale:hover {
+                transform: scale(1.02);
+            }
+        </style>
+    </head>
+    <body class="bg-white text-gray-900">
+        <!-- Skip to content -->
+        <a href="#MainContent" class="sr-only focus:not-sr-only">Skip to content</a>
 
-    <!-- Navigation -->
-    <header class="border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-1">
-                    <a href="/" class="text-xl font-normal hover:opacity-70 transition-opacity">
-                        Number Nine Closet "Style"
-                    </a>
-                </div>
-                <div class="flex items-center space-x-8">
-                    <a href="/collections/all" class="text-sm hover:opacity-70 transition-opacity">Shop all</a>
-                    <a href="/cart" class="cart-dot hover:opacity-70 transition-opacity">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main id="MainContent">
-        <!-- Hero Section -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-            <h1 class="text-4xl sm:text-5xl font-normal text-center mb-24">
-                Welcome to Number Nine Closet "Style"
-            </h1>
-        </div>
-
-        <!-- Brand Story -->
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-            <div class="aspect-[4/3] mb-16">
-                <img src="https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg" 
-                     alt="Fashion" 
-                     class="w-full h-full object-cover rounded-lg">
-            </div>
-
-            <div class="prose max-w-none">
-                <div class="space-y-6 text-lg leading-relaxed">
-                    <p>
-                        Number Nine Closet "Style" has been a vision of mine for a long time. Just to introduce myself — I'm the person behind it. Growing up, I always found myself fascinated by the idea of style not just as what you wear, but as an expression of who you are. I didn't come from a place where fashion was handed to you. Creativity wasn't a luxury — it was a way to stand out, to say something without even speaking.
-                    </p>
-                    <p>
-                        From a young age, I paid attention to every small detail — the way colors matched (or didn't), the way a simple accessory could change everything. To me, style was about completeness. About individuality. About being you, fully and unapologetically.
-                    </p>
-                    <p>
-                        The name Number Nine Closet "Style" represents exactly that. In numerology, 9 symbolizes completeness — it's the end of a cycle before everything resets. Think about it: from 1 to 9, and then it starts again at 0, at 10. Just like creativity, just like fashion — it's always evolving, always reaching a new pinnacle before starting a new journey.
-                    </p>
-                    <p>
-                        Starting this brand wasn't just about clothing. It was about creating a space where people could find pieces that represent their peak, their originality, their own Number Nine moment. This is for the dreamers, the risk-takers, the ones not afraid to hit 9 and start over even stronger.
-                    </p>
-                    <p>
-                        Welcome to Number Nine Closet "Style". I hope you feel as complete wearing it as I felt creating it. Love you.
-                    </p>
+        <!-- Navigation -->
+        <header class="border-b border-gray-200 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex-1">
+                        <a href="/" class="text-xl font-semibold hover:opacity-70 transition-opacity">
+                            No.9closet_sty
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center space-x-8">
+                        <a href="#about" class="text-sm hover:text-gray-600 transition-colors">About</a>
+                        <a href="#featured" class="text-sm hover:text-gray-600 transition-colors">Featured</a>
+                        <a href="/collections/all" class="text-sm hover:text-gray-600 transition-colors">Shop all</a>
+                        <a href="/cart" class="cart-dot hover:opacity-70 transition-opacity">
+                            <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                        </a>
+                    </nav>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- Featured Products -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-            <h2 class="text-2xl font-normal mb-12">Featured products</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-                <!-- Product 1 -->
-                <div class="group">
-                    <a href="#" class="block">
-                        <div class="aspect-[3/4] overflow-hidden mb-4">
-                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
-                                 alt="Product 1" 
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+        <main id="MainContent">
+            <!-- Hero Section -->
+            <div class="relative bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+                    <div class="text-center">
+                        <h1 class="text-4xl sm:text-5xl font-semibold mb-6 tracking-tight">
+                            Welcome to Number Nine Closet "Style"
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                            Discover your unique style with our carefully curated collection of fashion pieces that
+                            speak to your individuality.
+                        </p>
+                        <a
+                            href="/collections/all"
+                            class="inline-block bg-black text-white px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Story -->
+            <div id="about" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                <div class="aspect-[4/3] mb-16 overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <a href="https://ibb.co/hxgGYyrV"
+                        ><img src="https://i.ibb.co/0pn0sc1r/IMG-9316.jpg" alt="IMG-9316" border="0"
+                    /></a>
+                </div>
+
+                <div class="prose max-w-none">
+                    <div class="space-y-8 text-lg leading-relaxed">
+                        <h2 class="text-3xl font-semibold mb-8">Our Story</h2>
+                        <p class="text-gray-600">
+                            Number Nine Closet "Style" has been a vision of mine for a long time. Just to introduce
+                            myself — I'm the person behind it. Growing up, I always found myself fascinated by the idea
+                            of style not just as what you wear, but as an expression of who you are.
+                        </p>
+                        <p class="text-gray-600">
+                            From a young age, I paid attention to every small detail — the way colors matched (or
+                            didn't), the way a simple accessory could change everything. To me, style was about
+                            completeness. About individuality. About being you, fully and unapologetically.
+                        </p>
+                        <p class="text-gray-600">
+                            The name Number Nine Closet "Style" represents exactly that. In numerology, 9 symbolizes
+                            completeness — it's the end of a cycle before everything resets. Think about it: from 1 to
+                            9, and then it starts again at 0, at 10. Just like creativity, just like fashion — it's
+                            always evolving, always reaching a new pinnacle before starting a new journey.
+                        </p>
+                        <p class="text-gray-600">
+                            Starting this brand wasn't just about clothing. It was about creating a space where people
+                            could find pieces that represent their peak, their originality, their own Number Nine
+                            moment. This is for the dreamers, the risk-takers, the ones not afraid to hit 9 and start
+                            over even stronger.
+                        </p>
+                        <p class="text-gray-600">
+                            Welcome to Number Nine Closet "Style". I hope you feel as complete wearing it as I felt
+                            creating it. Love you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div id="featured" class="bg-gray-50 py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-semibold mb-12">Featured Products</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                        <!-- Product 1 -->
+                        <div class="group hover-scale">
+                            <a href="#" class="block">
+                                <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 bg-white">
+                                    <a href="https://ibb.co/LzFbwkbC"
+                                        ><img src="https://i.ibb.co/XZQNB2Nz/IMG-9273.jpg" alt="IMG-9273" border="0"
+                                    /></a>
+                                </div>
+                                <h3 class="text-lg font-medium mb-2">Elegant Summer Dress</h3>
+                                <p class="text-gray-600">€149.99 EUR</p>
+                            </a>
                         </div>
-                        <h3 class="text-base mb-1">Example product title</h3>
-                        <p class="text-gray-600">Regular price €19,99 EUR</p>
-                    </a>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="group">
-                    <a href="#" class="block">
-                        <div class="aspect-[3/4] overflow-hidden mb-4">
-                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
-                                 alt="Product 2" 
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <!-- Product 2 -->
+                        <div class="group hover-scale">
+                            <a href="#" class="block">
+                                <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 bg-white">
+                                    <a href="https://ibb.co/Wvyny68T"
+                                        ><img src="https://i.ibb.co/8g5M50vh/IMG-9294.jpg" alt="IMG-9294" border="0"
+                                    /></a>
+                                </div>
+                                <h3 class="text-lg font-medium mb-2">Classic White Blouse</h3>
+                                <p class="text-gray-600">€89.99 EUR</p>
+                            </a>
                         </div>
-                        <h3 class="text-base mb-1">Example product title</h3>
-                        <p class="text-gray-600">Regular price €19,99 EUR</p>
-                    </a>
-                </div>
 
-                <!-- Product 3 -->
-                <div class="group">
-                    <a href="#" class="block">
-                        <div class="aspect-[3/4] overflow-hidden mb-4">
-                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
-                                 alt="Product 3" 
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <!-- Product 3 -->
+                        <div class="group hover-scale">
+                            <a href="#" class="block">
+                                <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 bg-white">
+                                    <a href="https://ibb.co/tpL50r1Y"
+                                        ><img src="https://i.ibb.co/hFYvGzT2/IMG-9302.jpg" alt="IMG-9302" border="0"
+                                    /></a>
+                                </div>
+                                <h3 class="text-lg font-medium mb-2">Vintage Denim Jacket</h3>
+                                <p class="text-gray-600">€199.99 EUR</p>
+                            </a>
                         </div>
-                        <h3 class="text-base mb-1">Example product title</h3>
-                        <p class="text-gray-600">Regular price €19,99 EUR</p>
-                    </a>
-                </div>
 
-                <!-- Product 4 -->
-                <div class="group">
-                    <a href="#" class="block">
-                        <div class="aspect-[3/4] overflow-hidden mb-4">
-                            <img src="https://images.pexels.com/photos/2466756/pexels-photo-2466756.jpeg" 
-                                 alt="Product 4" 
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <!-- Product 4 -->
+                        <div class="group hover-scale">
+                            <a href="#" class="block">
+                                <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4 bg-white">
+                                    <a href="https://ibb.co/HpPVnc75"
+                                        ><img src="https://i.ibb.co/Tq0kmQc9/IMG-9287.jpg" alt="IMG-9287" border="0"
+                                    /></a>
+                                </div>
+                                <h3 class="text-lg font-medium mb-2">Silk Evening Gown</h3>
+                                <p class="text-gray-600">€299.99 EUR</p>
+                            </a>
                         </div>
-                        <h3 class="text-base mb-1">Example product title</h3>
-                        <p class="text-gray-600">Regular price €19,99 EUR</p>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="text-sm text-gray-500 space-y-4">
-                <p>Choosing a selection results in a full page refresh.</p>
-                <p>Opens in a new window.</p>
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                        <p class="text-gray-600">
+                            Number Nine Closet "Style" - Where fashion meets individuality. Express yourself through our
+                            carefully curated collection.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop All</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shipping Info</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-gray-900">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-900">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-900">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-900">
+                                <i class="fab fa-pinterest text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <p class="text-sm text-gray-600 text-center">
+                        &copy; 2024 Number Nine Closet "Style". All rights reserved.
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
